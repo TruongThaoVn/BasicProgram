@@ -9,16 +9,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dlg_basicfunction.cpp \
     main.cpp \
     basicprogram.cpp
 
 HEADERS += \
-    basicprogram.h
+    basicprogram.h \
+    dlg_basicfunction.h
 
 FORMS += \
-    basicprogram.ui
+    basicprogram.ui \
+    dlg_basicfunction.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    BasicProgramQRC.qrc

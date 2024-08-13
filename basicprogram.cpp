@@ -15,6 +15,14 @@ BasicProgram::~BasicProgram()
 
 void BasicProgram::on_btn_click_clicked()
 {
-    ui->lbl_show->setText("Hello!!!");
+
+}
+
+
+void BasicProgram::on_btn_basicFunction_clicked()
+{
+    Dlg_BasicFunction *dlgBasic=new Dlg_BasicFunction();
+    this->hide();
+    dlgBasic->show();
 }
 

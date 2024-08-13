@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/add.png</file>
+        <file>resources/Devide.png</file>
+        <file>resources/minus.png</file>
+        <file>resources/multiplies.png</file>
+    </qresource>
+</RCC>

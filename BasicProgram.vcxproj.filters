@@ -43,25 +43,34 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dlg_basicfunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="basicprogram.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="dlg_basicfunction.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    
-    
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
     <CustomBuild Include="release\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
-    
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="BasicProgramQRC.qrc" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="basicprogram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="dlg_basicfunction.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

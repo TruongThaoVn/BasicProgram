@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dlg_BasicFunction</class>
+ <widget class="QDialog" name="Dlg_BasicFunction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="btn_sum">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>90</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/add.png</normaloff>:/resources/resources/add.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_array">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Input Array</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Normal way</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_minus">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/minus.png</normaloff>:/resources/resources/minus.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_multiply">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>90</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/multiplies.png</normaloff>:/resources/resources/multiplies.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_divide">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>90</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/Devide.png</normaloff>:/resources/resources/Devide.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_divide_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>180</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/Devide.png</normaloff>:/resources/resources/Devide.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_minus_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>180</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/minus.png</normaloff>:/resources/resources/minus.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Better way</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_multiply_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>180</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/multiplies.png</normaloff>:/resources/resources/multiplies.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_sum_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="icon">
+    <iconset resource="BasicProgramQRC.qrc">
+     <normaloff>:/resources/resources/add.png</normaloff>:/resources/resources/add.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_results">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>781</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Results</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="BasicProgramQRC.qrc"/>
+ </resources>
+ <connections/>
+</ui>

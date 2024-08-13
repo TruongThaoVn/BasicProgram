@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -24,8 +23,7 @@ class Ui_BasicProgram
 {
 public:
     QWidget *centralwidget;
-    QPushButton *btn_click;
-    QLabel *lbl_show;
+    QPushButton *btn_basicFunction;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -36,12 +34,9 @@ public:
         BasicProgram->resize(800, 600);
         centralwidget = new QWidget(BasicProgram);
         centralwidget->setObjectName("centralwidget");
-        btn_click = new QPushButton(centralwidget);
-        btn_click->setObjectName("btn_click");
-        btn_click->setGeometry(QRect(100, 230, 141, 91));
-        lbl_show = new QLabel(centralwidget);
-        lbl_show->setObjectName("lbl_show");
-        lbl_show->setGeometry(QRect(400, 245, 121, 61));
+        btn_basicFunction = new QPushButton(centralwidget);
+        btn_basicFunction->setObjectName("btn_basicFunction");
+        btn_basicFunction->setGeometry(QRect(20, 20, 141, 91));
         BasicProgram->setCentralWidget(centralwidget);
         menubar = new QMenuBar(BasicProgram);
         menubar->setObjectName("menubar");
@@ -59,8 +54,7 @@ public:
     void retranslateUi(QMainWindow *BasicProgram)
     {
         BasicProgram->setWindowTitle(QCoreApplication::translate("BasicProgram", "BasicProgram", nullptr));
-        btn_click->setText(QCoreApplication::translate("BasicProgram", "Click Here", nullptr));
-        lbl_show->setText(QString());
+        btn_basicFunction->setText(QCoreApplication::translate("BasicProgram", "BasicFunction", nullptr));
     } // retranslateUi
 
 };
