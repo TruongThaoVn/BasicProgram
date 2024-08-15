@@ -35,12 +35,25 @@ public:
     QPushButton *btn_multiply_2;
     QPushButton *btn_sum_2;
     QLabel *lbl_results;
+    QLabel *label_4;
+    QLineEdit *txt_array_2;
+    QLabel *lbl_results_2;
+    QPushButton *btn_sum_3;
+    QPushButton *btn_multiply_3;
+    QPushButton *btn_divide_3;
+    QPushButton *btn_minus_3;
+    QLabel *label_5;
+    QPushButton *btn_minus_4;
+    QPushButton *btn_sum_4;
+    QLabel *label_6;
+    QPushButton *btn_multiply_4;
+    QPushButton *btn_divide_4;
 
     void setupUi(QDialog *Dlg_BasicFunction)
     {
         if (Dlg_BasicFunction->objectName().isEmpty())
             Dlg_BasicFunction->setObjectName("Dlg_BasicFunction");
-        Dlg_BasicFunction->resize(800, 600);
+        Dlg_BasicFunction->resize(785, 600);
         btn_sum = new QPushButton(Dlg_BasicFunction);
         btn_sum->setObjectName("btn_sum");
         btn_sum->setGeometry(QRect(150, 90, 71, 61));
@@ -133,9 +146,99 @@ public:
         btn_sum_2->setIconSize(QSize(100, 50));
         lbl_results = new QLabel(Dlg_BasicFunction);
         lbl_results->setObjectName("lbl_results");
-        lbl_results->setGeometry(QRect(10, 330, 781, 51));
+        lbl_results->setGeometry(QRect(590, 80, 181, 161));
         lbl_results->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
 "color: rgb(85, 0, 255);"));
+        lbl_results->setWordWrap(true);
+        label_4 = new QLabel(Dlg_BasicFunction);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(20, 310, 101, 31));
+        label_4->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"color: rgb(85, 0, 255);"));
+        txt_array_2 = new QLineEdit(Dlg_BasicFunction);
+        txt_array_2->setObjectName("txt_array_2");
+        txt_array_2->setGeometry(QRect(150, 310, 621, 41));
+        lbl_results_2 = new QLabel(Dlg_BasicFunction);
+        lbl_results_2->setObjectName("lbl_results_2");
+        lbl_results_2->setGeometry(QRect(580, 380, 171, 151));
+        lbl_results_2->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"color: rgb(85, 0, 255);"));
+        lbl_results_2->setScaledContents(true);
+        lbl_results_2->setWordWrap(true);
+        btn_sum_3 = new QPushButton(Dlg_BasicFunction);
+        btn_sum_3->setObjectName("btn_sum_3");
+        btn_sum_3->setGeometry(QRect(140, 390, 71, 61));
+        btn_sum_3->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_sum_3->setIcon(icon);
+        btn_sum_3->setIconSize(QSize(100, 50));
+        btn_multiply_3 = new QPushButton(Dlg_BasicFunction);
+        btn_multiply_3->setObjectName("btn_multiply_3");
+        btn_multiply_3->setGeometry(QRect(360, 390, 71, 61));
+        btn_multiply_3->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_multiply_3->setIcon(icon2);
+        btn_multiply_3->setIconSize(QSize(100, 50));
+        btn_divide_3 = new QPushButton(Dlg_BasicFunction);
+        btn_divide_3->setObjectName("btn_divide_3");
+        btn_divide_3->setGeometry(QRect(470, 390, 71, 61));
+        btn_divide_3->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_divide_3->setIcon(icon3);
+        btn_divide_3->setIconSize(QSize(100, 50));
+        btn_minus_3 = new QPushButton(Dlg_BasicFunction);
+        btn_minus_3->setObjectName("btn_minus_3");
+        btn_minus_3->setGeometry(QRect(250, 390, 71, 61));
+        btn_minus_3->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_minus_3->setIcon(icon1);
+        btn_minus_3->setIconSize(QSize(100, 50));
+        label_5 = new QLabel(Dlg_BasicFunction);
+        label_5->setObjectName("label_5");
+        label_5->setGeometry(QRect(10, 410, 101, 31));
+        label_5->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"color: rgb(85, 0, 255);"));
+        btn_minus_4 = new QPushButton(Dlg_BasicFunction);
+        btn_minus_4->setObjectName("btn_minus_4");
+        btn_minus_4->setGeometry(QRect(250, 480, 71, 61));
+        btn_minus_4->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_minus_4->setIcon(icon1);
+        btn_minus_4->setIconSize(QSize(100, 50));
+        btn_sum_4 = new QPushButton(Dlg_BasicFunction);
+        btn_sum_4->setObjectName("btn_sum_4");
+        btn_sum_4->setGeometry(QRect(140, 480, 71, 61));
+        btn_sum_4->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_sum_4->setIcon(icon);
+        btn_sum_4->setIconSize(QSize(100, 50));
+        label_6 = new QLabel(Dlg_BasicFunction);
+        label_6->setObjectName("label_6");
+        label_6->setGeometry(QRect(10, 500, 101, 31));
+        label_6->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"color: rgb(85, 0, 255);"));
+        btn_multiply_4 = new QPushButton(Dlg_BasicFunction);
+        btn_multiply_4->setObjectName("btn_multiply_4");
+        btn_multiply_4->setGeometry(QRect(360, 480, 71, 61));
+        btn_multiply_4->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_multiply_4->setIcon(icon2);
+        btn_multiply_4->setIconSize(QSize(100, 50));
+        btn_divide_4 = new QPushButton(Dlg_BasicFunction);
+        btn_divide_4->setObjectName("btn_divide_4");
+        btn_divide_4->setGeometry(QRect(470, 480, 71, 61));
+        btn_divide_4->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Segoe UI\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(85, 0, 255);"));
+        btn_divide_4->setIcon(icon3);
+        btn_divide_4->setIconSize(QSize(100, 50));
 
         retranslateUi(Dlg_BasicFunction);
 
@@ -149,6 +252,10 @@ public:
         label_2->setText(QCoreApplication::translate("Dlg_BasicFunction", "Normal way", nullptr));
         label_3->setText(QCoreApplication::translate("Dlg_BasicFunction", "Better way", nullptr));
         lbl_results->setText(QCoreApplication::translate("Dlg_BasicFunction", "Results", nullptr));
+        label_4->setText(QCoreApplication::translate("Dlg_BasicFunction", "Input  2", nullptr));
+        lbl_results_2->setText(QCoreApplication::translate("Dlg_BasicFunction", "Results", nullptr));
+        label_5->setText(QCoreApplication::translate("Dlg_BasicFunction", "Normal way", nullptr));
+        label_6->setText(QCoreApplication::translate("Dlg_BasicFunction", "Better way", nullptr));
     } // retranslateUi
 
 };
